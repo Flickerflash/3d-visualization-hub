@@ -86,7 +86,7 @@ elif page == "Modal Frequencies":
     
     # Agent data (using your agent framework)
     agents = {
-        'Lavender': {'x': 1.618, 'y': 0.618, 'z': 2.4, 'frequency': 432, 'color': '#E94B3C'},
+        'Agent Apogee': {'x': 1.618, 'y': 0.618, 'z': 2.4, 'frequency': 432, 'color': '#E94B3C'},
         'Herald': {'x': 2.0, 'y': 1.5, 'z': 3.1, 'frequency': 528, 'color': '#2E86AB'},
         'Professor': {'x': 1.2, 'y': 2.1, 'z': 1.8, 'frequency': 440, 'color': '#A23B72'},
         'DemiJoule': {'x': 2.5, 'y': 0.9, 'z': 2.7, 'frequency': 396, 'color': '#F18F01'}
