@@ -11,3 +11,21 @@ Right now this is an early **prototype**:
 - Some examples are simple demos and experiments.
 - The goal is to show how I think about visualizing multi-dimensional data (and later, phi-harmonic stability) in a way humans can actually use.
 - It pairs with my other repos: evaluation in `junior-apogee-app`, prompts in `ai-prompt-systems-portfolio`, visuals here.
+
+## Quick Start (Local)
+
+```bash
+git clone https://github.com/Flickerflash/3d-visualization-hub.git
+cd 3d-visualization-hub
+
+python -m venv .venv
+# PowerShell:
+Set-ExecutionPolicy Bypass -Scope Process -Force
+.\.venv\Scripts\Activate.ps1
+# or on macOS/Linux:
+# source .venv/bin/activate
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+streamlit run app.py
