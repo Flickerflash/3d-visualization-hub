@@ -12,6 +12,7 @@ Right now this is an early **prototype**:
 - The goal is to show how I think about visualizing multi-dimensional data (and later, phi-harmonic stability) in a way humans can actually use.
 - It pairs with my other repos: evaluation in `junior-apogee-app`, prompts in `ai-prompt-systems-portfolio`, visuals here.
 
+
 ## Quick Start (Local)
 
 ```bash
