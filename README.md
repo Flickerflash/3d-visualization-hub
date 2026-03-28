@@ -30,3 +30,46 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 streamlit run app.py
+
+
+## Example Dataset & Usage
+
+A minimal example dataset and visualization script are included to get you started quickly.
+
+**To run the example:**
+
+```bash
+python -m examples.simple_3d_scatter
+```
+
+This generates a sample dataset and opens an interactive 3D scatter plot in your browser (via Streamlit). The example demonstrates:
+- Data loading and transformation
+- Real-time filtering with sliders
+- 3D rotation, zoom, and pan controls
+- Export to static images
+
+See `examples/` folder for more sample datasets and visualization templates.
+
+---
+
+## Development & CI
+
+This project uses GitHub Actions for continuous integration:
+- **Linting**: `pylint` and `black` on Python code
+- **Testing**: Unit tests run automatically on every push
+- **Docker**: Pre-built Docker image available for cloud deployment
+
+**Running tests locally:**
+
+```bash
+pytest tests/ -v
+```
+
+**Code style & linting:**
+
+```bash
+black .
+pylint **/*.py
+```
+
+All PRs must pass CI checks before merging.
