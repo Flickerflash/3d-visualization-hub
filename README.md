@@ -3,6 +3,8 @@
 ![Language](https://img.shields.io/badge/Language-Python-blue)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+> **Governance:** DGAF / Agent Amethyst — Yes. This visualization hub is part of the Flickerflash DGAF ecosystem. See [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) for spine documentation.
+
 Interactive 3D data visualization platform powered by Google Cloud. Features Plotly, Matplotlib, and Streamlit for multidimensional data exploration — with **phi-harmonic modal analysis**, governance score plotting, drift trajectory visualization, and real-time agent chain rendering.
 
 Part of the [Phi-Harmonic Pentagon ecosystem](https://github.com/Flickerflash/DGAF-Framework).
