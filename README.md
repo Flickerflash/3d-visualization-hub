@@ -1,17 +1,19 @@
-## Quick Overview (In Plain Language)
+# 3D Visualization Hub
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Language](https://img.shields.io/badge/Language-Python-blue)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-This project is my **3D data visualization sandbox**.
+Interactive 3D data visualization platform powered by Google Cloud. Features Plotly, Matplotlib, and Streamlit for multidimensional data exploration — with **phi-harmonic modal analysis**, governance score plotting, drift trajectory visualization, and real-time agent chain rendering.
 
-In simple terms:
-- It lets you explore complex data in interactive 3D (rotating, zooming, filtering).
-- It uses tools like Plotly, Matplotlib, and Streamlit to turn numbers into visuals.
-- It’s designed to eventually show things like AI model behavior and stability over time, not just static charts.
+Part of the [Phi-Harmonic Pentagon ecosystem](https://github.com/Flickerflash/DGAF-Framework).
 
-Right now this is an early **prototype**:
-- Some examples are simple demos and experiments.
-- The goal is to show how I think about visualizing multi-dimensional data (and later, phi-harmonic stability) in a way humans can actually use.
-- It pairs with my other repos: evaluation in `junior-apogee-app`, prompts in `ai-prompt-systems-portfolio`, visuals here.
+## What This Visualizes
 
+- **Governance scores** — audit trail plots from `junior-apogee-app` and DGAF eval runs
+- **Drift trajectories** — harmonic state monitoring surfaces from `Driftwatch`
+- **Agent chain viz** — multi-agent synthesis flow graphs
+- **Phi-harmonic modal analysis** — frequency decomposition in 3D manifold space
+- **General multidimensional data** — rotating, zooming, filtering on any dataset
 
 ## Quick Start (Local)
 
@@ -23,34 +25,30 @@ python -m venv .venv
 # PowerShell:
 Set-ExecutionPolicy Bypass -Scope Process -Force
 .\.venv\Scripts\Activate.ps1
-# or on macOS/Linux:
+# macOS/Linux:
 # source .venv/bin/activate
 
 pip install --upgrade pip
 pip install -r requirements.txt
 
 streamlit run app.py
-
+```
 
 ## Example Dataset & Usage
 
-A minimal example dataset and visualization script are included to get you started quickly.
-
-**To run the example:**
+A minimal example dataset and visualization script are included.
 
 ```bash
 python -m examples.simple_3d_scatter
 ```
 
-This generates a sample dataset and opens an interactive 3D scatter plot in your browser (via Streamlit). The example demonstrates:
+This generates a sample dataset and opens an interactive 3D scatter plot in your browser. The example demonstrates:
 - Data loading and transformation
 - Real-time filtering with sliders
 - 3D rotation, zoom, and pan controls
 - Export to static images
 
-See `examples/` folder for more sample datasets and visualization templates.
-
----
+See `examples/` for more sample datasets and visualization templates.
 
 ## Development & CI
 
@@ -59,17 +57,24 @@ This project uses GitHub Actions for continuous integration:
 - **Testing**: Unit tests run automatically on every push
 - **Docker**: Pre-built Docker image available for cloud deployment
 
-**Running tests locally:**
-
 ```bash
+# Run tests
 pytest tests/ -v
-```
 
-**Code style & linting:**
-
-```bash
+# Code style
 black .
 pylint **/*.py
 ```
 
 All PRs must pass CI checks before merging.
+
+## Related Ecosystem
+
+- [Driftwatch](https://github.com/Flickerflash/Driftwatch) — phi-driven drift detection and harmonic state monitoring
+- [junior-apogee-app](https://github.com/Flickerflash/junior-apogee-app) — AI evaluation platform (source of governance score data)
+- [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) — governance spine for the full ecosystem
+- [Acoustic-mesh](https://github.com/Flickerflash/Acoustic-mesh) — WebRTC acoustic mesh with phi-harmonic sensor analysis
+
+## Provenance
+
+Developed by [Ndr "Ender" Hensel](https://github.com/Flickerflash) — AI Orchestration Engineer & Systems Architect, Columbus OH.
