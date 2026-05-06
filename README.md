@@ -1,83 +1,60 @@
 # 3D Visualization Hub
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Language](https://img.shields.io/badge/Language-Python-blue)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-> **Governance:** DGAF / Agent Amethyst — Yes. This visualization hub is part of the ndrorchestration DGAF ecosystem. See [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) for spine documentation.
+![Status](https://img.shields.io/badge/Status-GCP%20Phase%204-blue?style=flat-square)
+![License](https://img.shields.io/badge/License-Apache%202.0-01696f?style=flat-square)
+![Language](https://img.shields.io/badge/Language-Python-blue?style=flat-square)
+![Governed](https://img.shields.io/badge/Governed%20by-Agent%20Amethyst-7a39bb?style=flat-square)
+![GCP](https://img.shields.io/badge/GCP-Cloud%20Run-4285F4?style=flat-square)
 
-Interactive 3D data visualization platform powered by Google Cloud. Features Plotly, Matplotlib, and Streamlit for multidimensional data exploration — with **phi-harmonic modal analysis**, governance score plotting, drift trajectory visualization, and real-time agent chain rendering.
+> **Governance:** DGAF / Agent Amethyst. See [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework).  
+> **GCP Project:** `encoded-blend-482316-g2` · **Region:** `us-central1` · **Service:** Cloud Run · `3d-viz-hub`  
+> **Cost Gate (DemiJoule):** Monthly burn ≤ $25/mo enforced.
 
-Part of the [Phi-Harmonic Pentagon ecosystem](https://github.com/ndrorchestration/DGAF-Framework).
+Interactive 3D data visualizations powered by Google Cloud — featuring Plotly, Matplotlib, and Streamlit for multidimensional phi-harmonic data exploration with real-time cloud streaming.
 
-## What This Visualizes
+Part of the **PhiLattice / PDMAL** (Phi-Driven Multi-Agent Lattice) ecosystem. Full deployment spec: see [PHASE-4 Outline](https://github.com/ndrorchestration/DGAF-Framework) for GCP architecture.
 
-- **Governance scores** — audit trail plots from `junior-apogee-app` and DGAF eval runs
-- **Drift trajectories** — harmonic state monitoring surfaces from `Driftwatch`
-- **Agent chain viz** — multi-agent synthesis flow graphs
-- **Phi-harmonic modal analysis** — frequency decomposition in 3D manifold space
-- **General multidimensional data** — rotating, zooming, filtering on any dataset
+---
 
-## Quick Start (Local)
+## Technical Stack
 
-```bash
-git clone https://github.com/ndrorchestration/3d-visualization-hub.git
-cd 3d-visualization-hub
+- **Plotly + Matplotlib** — 3D interactive charts and static phi-harmonic visualizations
+- **Streamlit** — Real-time dashboard substrate
+- **Google Cloud Run** — Serverless container deployment (`us-central1`)
+- **GCP Storage Buckets** — Data streaming and artifact storage
+- **Phi-Harmonic Modal Analysis** — Visualization substrate for harmonic state data
+- **OpenTelemetry OTel v1.41.0+** — Observability
 
-python -m venv .venv
-# PowerShell:
-Set-ExecutionPolicy Bypass -Scope Process -Force
-.\.venv\Scripts\Activate.ps1
-# macOS/Linux:
-# source .venv/bin/activate
+---
 
-pip install --upgrade pip
-pip install -r requirements.txt
+## GCP Deployment Summary
 
-streamlit run app.py
-```
+| Parameter | Value |
+|---|---|
+| **Project ID** | `encoded-blend-482316-g2` |
+| **Region** | `us-central1` |
+| **Service** | Cloud Run · `3d-viz-hub` |
+| **Cost Gate** | ≤ $25/mo (DemiJoule enforced) |
+| **Phase** | Phase 4 (Production) |
 
-## Example Dataset & Usage
+---
 
-A minimal example dataset and visualization script are included.
+## IP Notice
 
-```bash
-python -m examples.simple_3d_scatter
-```
+Core phi constants, frequency tuning tables, and constraint optimization algorithms are **not included**. Visualization architecture and GCP configuration only.
 
-This generates a sample dataset and opens an interactive 3D scatter plot in your browser. The example demonstrates:
-- Data loading and transformation
-- Real-time filtering with sliders
-- 3D rotation, zoom, and pan controls
-- Export to static images
-
-See `examples/` for more sample datasets and visualization templates.
-
-## Development & CI
-
-This project uses GitHub Actions for continuous integration:
-- **Linting**: `pylint` and `black` on Python code
-- **Testing**: Unit tests run automatically on every push
-- **Docker**: Pre-built Docker image available for cloud deployment
-
-```bash
-# Run tests
-pytest tests/ -v
-
-# Code style
-black .
-pylint **/*.py
-```
-
-All PRs must pass CI checks before merging.
+---
 
 ## Related Ecosystem
 
-- [Driftwatch](https://github.com/ndrorchestration/Driftwatch) — phi-driven drift detection and harmonic state monitoring
-- [junior-apogee-app](https://github.com/ndrorchestration/junior-apogee-app) — AI evaluation platform (source of governance score data)
-- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — governance spine for the full ecosystem
-- [Acoustic-mesh](https://github.com/ndrorchestration/Acoustic-mesh) — WebRTC acoustic mesh with phi-harmonic sensor analysis
+- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — Governance spine
+- [Acoustic-mesh](https://github.com/ndrorchestration/Acoustic-mesh) — Schizophonic Studio audio substrate
+- [Driftwatch](https://github.com/ndrorchestration/Driftwatch) — Drift detection layer
+- [junior-apogee-app](https://github.com/ndrorchestration/junior-apogee-app) — QA platform
+
+---
 
 ## Provenance
 
 Developed by [Ndr "Ender" Hensel](https://github.com/ndrorchestration) — AI Orchestration Engineer & Systems Architect, Columbus OH.  
-[LinkedIn](https://www.linkedin.com/in/andrewhensel) · [GitHub](https://github.com/ndrorchestration)
+[LinkedIn](https://linkedin.com/in/andrewhensel) · [GitHub](https://github.com/ndrorchestration)
